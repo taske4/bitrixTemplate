@@ -1,4 +1,4 @@
-<?
+<? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
 use Bitrix\Main\Page\Asset;
 
@@ -15,7 +15,7 @@ $asset = Asset::getInstance();
         <? $APPLICATION->ShowHead() ?>
 
         <?
-            $asset->addCss(SITE_TEMPLATE_PATH . '/assets/css/custom.css');
+        $asset->addCss(SITE_TEMPLATE_PATH . '/assets/css/custom.css');
         ?>
 
         <title><? $APPLICATION->ShowTitle() ?></title>
